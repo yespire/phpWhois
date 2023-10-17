@@ -78,11 +78,11 @@ class RuHandlerTest extends AbstractHandler
     }
 
     /**
+     * Warning: for this test is used "рег.рф.txt", but this file broke "Composer" for macOS
      * @return void
      * @test
-     * @noinspection NonAsciiCharacters
      */
-    public function parsePегDotPphi()
+    public function parsePerDotPhi(): void
     {
         $query = 'рег.рф';
 

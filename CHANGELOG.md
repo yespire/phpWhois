@@ -1,3 +1,25 @@
+6.3.1 - 2023-10-17
+------------------
+### Added
+*   [#5] Add .phpunit.cache into .gitignore
+### Fixes
+*   [#5] Fix syntax
+*   [#5] Fix unused functions
+*   [#5] Fix unused variables
+*   [#5] Comments may not appear after statements
+*   [#5] Expected 1 space before opening brace; found 0
+*   [#5] Fix unused variable $data
+*   [#5] Fix undefined variable $b
+*   [#5] Fix indent in .md files
+*   [#5] Use short array syntax
+*   [#5] Fix indent in .md files
+*   [#5] Fix CHANGELOG.md
+### Removed
+*   [#5] Remove "bootstrap.php" file
+*   [#5] Remove require_once from ParserTest.php
+*   [#5] Remove "print_r" function
+
+
 6.3.0 - 2023-08-11
 ------------------
 *   Update PHPUnit Test and fixtures

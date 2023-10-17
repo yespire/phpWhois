@@ -40,12 +40,10 @@ Installation
 ### Via composer
 
 #### Stable version
-
-`php composer.phar require "kevinoo/phpwhois":"^6.3"`
+`composer require "kevinoo/phpwhois":"^6.3"`
 
 #### Latest development version
-
-`php composer.phar require "kevinoo/phpwhois":"dev-master"`
+`composer require "kevinoo/phpwhois":"dev-master"`
 
 
 Example usage
@@ -54,9 +52,7 @@ Example usage
 (see `example.php`)
 ```php
 // Load composer framework
-if (file_exists(__DIR__ . '/vendor/autoload.php')) {
-    require_once __DIR__ . '/vendor/autoload.php';
-}
+require_once __DIR__ . '/vendor/autoload.php';
 
 use phpWhois\Whois;
 
@@ -81,6 +77,7 @@ You can use phpWhois to query domain names, ip addresses and other information
 like AS, i.e, both of the following examples work:
 ```php
 use phpWhois\Whois;
+
 $whois = new Whois();
 $result = $whois->lookup('example.com');
 

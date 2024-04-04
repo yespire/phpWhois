@@ -2,4 +2,7 @@ composer.lock
 /vendor
 nbproject
 .idea
+/.settings
+/.buildpath
+/.project
 /.phpunit.cache

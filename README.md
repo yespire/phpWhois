@@ -34,17 +34,6 @@ phpWhois requires PHP 7.2 or better with OpenSSL support to work properly.
 Without SSL support you will not be able to query domains which do not have a
 whois server but that have a https based whois.
 
-Installation
-------------
-
-### Via composer
-
-#### Stable version
-`composer require "kevinoo/phpwhois":"^6.3"`
-
-#### Latest development version
-`composer require "kevinoo/phpwhois":"dev-master"`
-
 
 Example usage
 -------------

@@ -39,7 +39,7 @@ class RwhoisHandler extends AbstractHandler
 
         return [
             'regrinfo' => $res,
-            'rawdata' => $data_str['rawdata'] ?? [],
+        	'rawdata' => (isset($data_str['rawdata']) ? $data_str['rawdata'] : []),
         ];
     }
 }

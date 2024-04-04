@@ -1,12 +1,12 @@
 {
-    "name": "kevinoo/phpwhois",
+    "name": "yespire/phpwhois",
     "description": "phpWhois - library for querying whois services and parsing results.",
     "keywords": [
         "PHP",
         "Whois",
         "phpWhois"
     ],
-    "homepage": "https://www.lucichkevin.it/phpWhois/",
+    "homepage": "https://github.com/yespire/phpWhois",
     "type": "library",
     "license": "GPL-2.0-or-later",
     "authors": [

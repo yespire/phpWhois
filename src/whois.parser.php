@@ -63,7 +63,12 @@ function assign_recursive(array $array, array $parts, $value)
         if (!isset($array[$key])) {
             $array[$key] = [];
         }
-        $array[$key] = assign_recursive($array[$key], $parts, $value);
+
+        if (is_array($array[$key])) {
+            $array[$key] = assign_recursive($array[$key], $parts, $value);
+        } else {
+            // maybe non-array
+        }
     }
 
     return $array;

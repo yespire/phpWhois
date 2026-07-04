@@ -1,7 +1,7 @@
-[![PHPUnit Test](https://img.shields.io/badge/PHPUnit%20Test-passing-green?style=for-the-badge)](https://packagist.org/packages/kevinoo/phpwhois)
+[![PHPUnit Test](https://img.shields.io/badge/PHPUnit%20Test-passing-green?style=for-the-badge)](https://packagist.org/packages/yespire/phpwhois)
 [![Codacy branch grade](https://img.shields.io/codacy/grade/4bab08f5469a4d0bb5c792dd1117db5d/main?style=for-the-badge)](https://app.codacy.com/gh/kevinoo/phpWhois/dashboard)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/kevinoo/phpwhois?style=for-the-badge)](https://packagist.org/packages/kevinoo/phpwhois)
-[![Packagist PHP Version](https://img.shields.io/packagist/dependency-v/kevinoo/phpwhois/php?style=for-the-badge)](https://packagist.org/packages/kevinoo/phpwhois)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/yespire/phpwhois?style=for-the-badge)](https://packagist.org/packages/yespire/phpwhois)
+[![Packagist PHP Version](https://img.shields.io/packagist/dependency-v/yespire/phpwhois/php?style=for-the-badge)](https://packagist.org/packages/yespire/phpwhois)
 
 Introduction
 ------------
@@ -33,6 +33,17 @@ phpWhois requires PHP 7.2 or better with OpenSSL support to work properly.
 
 Without SSL support you will not be able to query domains which do not have a
 whois server but that have a https based whois.
+
+Installation
+------------
+
+### Via composer
+
+#### Stable version
+`composer require "yespire/phpwhois":"^6.4"`
+
+#### Latest development version
+`composer require "yespire/phpwhois":"dev-master"`
 
 
 Example usage
@@ -201,14 +212,14 @@ it will output the total layout of the returned object to the
 web browser.
 
 The latest version of the package and a demo script resides at 
-https://github.com/kevinoo/phpwhois
+https://github.com/yespire/phpwhois
 
 Contributing
 ---------------
 
 If you want to add support for new TLD, extend functionality or
 correct a bug, feel free to create a new pull request at Github's
-repository https://github.com/kevinoo/phpwhois
+repository https://github.com/yespire/phpwhois
 
 Credits from version v6.0.3
 -------

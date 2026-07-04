@@ -16,7 +16,7 @@
 % 
 
 Domain: humblebundle.de
-Nserver: ns1.sedoparking.com
-Nserver: ns2.sedoparking.com
+Nserver: ns1.redirectdom.com
+Nserver: ns2.redirectdom.com
 Status: connect
-Changed: 2023-07-16T05:18:17+02:00
+Changed: 2025-10-06T20:24:20+02:00

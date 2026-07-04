@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @copyright Copyright (c) 2020 Joshua Smith
+ * @license   See LICENSE file
+ */
+
+namespace Tests\Handlers\TLD;
+
+use DMS\PHPUnitExtensions\ArraySubset\Assert;
+use phpWhois\Handlers\TLD\AsiaHandler;
+use Tests\Handlers\AbstractHandler;
+
+/**
+ * AsiaHandlerTest.
+ *
+ * @internal
+ * @coversNothing
+ */
+class AsiaHandlerTest extends AbstractHandler
+{
+    /**
+     * @var AsiaHandler
+     */
+    protected $handler;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->handler = new AsiaHandler();
+        $this->handler->deepWhois = false;
+    }
+
+    /**
+     * @test
+     */
+    public function parseNicDotAsia()
+    {
+        $query = 'nic.asia';
+
+        $fixture = $this->loadFixture($query);
+        $data = [
+            'rawdata' => $fixture,
+            'regyinfo' => [],
+        ];
+
+        $actual = $this->handler->parse($data, $query);
+
+        $expected = [
+            'domain' => [
+                'name' => 'nic.asia',
+                'changed' => '2025-04-14',
+                'created' => '2020-02-28',
+                'expires' => '2026-02-28',
+            ],
+            'registered' => 'yes',
+        ];
+
+        Assert::assertArraySubset($expected, $actual['regrinfo'], 'Whois data may have changed');
+        $this->assertArrayHasKey('rawdata', $actual);
+        Assert::assertArraySubset($fixture, $actual['rawdata'], 'Fixture data may be out of date');
+    }
+}
